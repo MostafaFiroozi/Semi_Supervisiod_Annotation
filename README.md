@@ -1,5 +1,5 @@
 # Semi_Supervisiod_Annotation
-This code uses the output of a TensorFlow object detector to produce image annotations (COCO standard XML file) for the rest of dataset.
+This code uses the output of a TensorFlow object detector to produce image annotations (Pascal VOC standard XML file) for the rest of dataset.
 In most of the object detection projects, producing a gold standard for the model using usual image annotation tools is where most of the pain comes from. It requires a lot of time and anergy to annotate a big dataset of images. <br> 
 A lot of automatic online image annotation tools are expensive and not accorate enough. But why not using the inteligence of our own model to alleviate?<br> 
 In this approach, I suggest to first annotate a reasonable portion of the dataset, then build a prototype model based on that. Now having a detector, you can use this code to draw the bounding boxes around the rest of the dataset, and construct the .xml files for those images. Then you can correct those annotations and build the final model having a wide enough dataset.
